@@ -4,6 +4,7 @@ const Tournament = () => {
   return (
     <div>
       <Header />
+      <p>tournament</p>
     </div>
   );
 };
