@@ -81,7 +81,7 @@ const Page = () => {
         <tbody className="divide-y divide-border rounded-md border my-4">
           {players.map((player, index) => {
             return (
-              <tr>
+              <tr key={index}>
                 <th className="border-none">{index + 1}</th>
                 <td className="border-none">{player.name}</td>
                 <td className="border-none">{player.tournamentsCount}</td>

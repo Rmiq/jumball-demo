@@ -1,8 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import TournamentsHeader from './tournaments-header';
-
 
 const EmptyBracket = () => {
   return (

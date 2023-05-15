@@ -1,5 +1,4 @@
 import Bracket from '@/components/bracket';
-import TournamentsHeader from '@/components/tournaments-header';
 
 interface Params {
   params: {

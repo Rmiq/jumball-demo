@@ -18,7 +18,7 @@ const Page = () => {
       <div className="divide-y divide-border rounded-md border my-4">
         {teams.map((team, index) => {
           return (
-            <div className="flex items-center justify-between p-4">
+            <div className="flex items-center justify-between p-4" key={index}>
               <div className="flex gap-2">
                 <span className="mr-2">{index + 1}</span>
                 <p>{team.name}</p>
