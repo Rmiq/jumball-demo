@@ -1,4 +1,6 @@
-const App = () => {
+const Page = () => {
     return(<>
     </>);
 }
+
+export default Page;

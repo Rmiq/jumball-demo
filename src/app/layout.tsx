@@ -1,4 +1,6 @@
 // import SupabaseProvider from './supabase-provider'
+import Header from "@/components/header"
+import "@/styles/globals.css"
 
 export const metadata = {
   title: 'Jumball',
@@ -9,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        {/* <SupabaseProvider>{children}</SupabaseProvider> */}
+        <Header />
         {children}
       </body>
     </html>
