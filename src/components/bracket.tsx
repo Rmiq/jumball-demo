@@ -1,6 +1,5 @@
 'use client';
 
-import { useTournament } from '@/hooks/use-tournament';
 import { useEffect, useState } from 'react';
 import TournamentsHeader from './tournaments-header';
 
@@ -19,7 +18,7 @@ const Bracket = () => {
 
   const [tournament, setTournament] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
-  
+
 
   const onClick = () => {
     setTournament(!tournament);
@@ -66,12 +65,12 @@ const Bracket = () => {
     ];
 
 
-    const generateBracket = (teams) => {
+    const generateBracket = (teams: any) => {
       const rounds = Math.ceil(Math.log2(teams.length));
       let bracket = [];
       let matchCount = teams.length / 2;
 
-      const getRoundName = (round, rounds) => {
+      const getRoundName = (round: number, rounds: number) => {
         if (rounds - round === 1) return "Final"
         if (rounds - round === 2) return "Semi-final"
         return `1/${2 ** (rounds - round - 1)}`
