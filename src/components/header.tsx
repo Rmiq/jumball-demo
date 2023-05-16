@@ -1,24 +1,24 @@
-'use client';
+"use client"
 
-import Link from 'next/link';
+import Link from "next/link"
 
 const Header = () => {
   const items = [
     {
-      href: '/tournaments',
-      title: 'Tournaments'
+      href: "/tournaments",
+      title: "Tournaments",
     },
     {
-      href: '/ranking',
-      title: 'Ranking'
-    }
-  ];
+      href: "/ranking",
+      title: "Ranking",
+    },
+  ]
 
   return (
     <header className="sticky top-0 z-40 border-b bg-background">
       <div className="container flex h-16 items-center justify-between py-4">
         <div className="flex gap-6 md:gap-10">
-          <Link href="/" className="hidden items-center space-x-2 md:flex ml-8">
+          <Link href="/" className="ml-8 hidden items-center space-x-2 md:flex">
             <span className="hidden font-bold sm:inline-block">Jumball</span>
           </Link>
           {items?.length ? (
@@ -28,7 +28,7 @@ const Header = () => {
                   key={index}
                   href={item.href}
                   className={
-                    'flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm'
+                    "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm"
                   }
                 >
                   {item.title}
@@ -39,7 +39,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

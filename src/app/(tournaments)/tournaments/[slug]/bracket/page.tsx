@@ -1,19 +1,19 @@
-import Bracket from '@/components/bracket';
+import Bracket from "@/components/bracket"
 
 interface Params {
   params: {
-    slug: string[];
-  };
+    slug: string[]
+  }
 }
 
 const tournaments = ({ params }: Params) => {
-  const slug = params?.slug;
+  const slug = params?.slug
 
   return (
     <>
       <Bracket />
     </>
-  );
-};
+  )
+}
 
-export default tournaments;
+export default tournaments

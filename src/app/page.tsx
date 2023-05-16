@@ -1,8 +1,8 @@
-import { redirect } from 'next/navigation';
+import { redirect } from "next/navigation"
 
 const Page = () => {
-  redirect('/tournaments');
-  return <></>;
-};
+  redirect("/tournaments")
+  return <></>
+}
 
-export default Page;
+export default Page

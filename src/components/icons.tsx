@@ -24,10 +24,10 @@ import {
   User,
   X,
   type Icon as LucideIcon,
-  Trophy
-} from 'lucide-react';
+  Trophy,
+} from "lucide-react"
 
-export type Icon = LucideIcon;
+export type Icon = LucideIcon
 
 export const Icons = {
   logo: Command,
@@ -70,5 +70,5 @@ export const Icons = {
   ),
   twitter: Twitter,
   check: Check,
-  trophy: Trophy
-};
+  trophy: Trophy,
+}

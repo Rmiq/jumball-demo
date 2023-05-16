@@ -1,15 +1,15 @@
-import Link from 'next/link';
+import Link from "next/link"
 
 interface Params {
   params: {
-    slug: string[];
-  };
+    slug: string[]
+  }
 }
 
 const tournaments = ({ params }: Params) => {
-  const slug = params?.slug;
+  const slug = params?.slug
 
-  const tournaments = [{ name: 'tournament 1' }, { name: 'tournament 2' }, { name: 'tournament 3' }];
+  const tournaments = [{ name: "tournament 1" }, { name: "tournament 2" }, { name: "tournament 3" }]
 
   return (
     <div className="container mx-auto pt-6">
@@ -19,9 +19,9 @@ const tournaments = ({ params }: Params) => {
         {tournaments.map((tournament, index) => {
           return (
             <Link
-              className="rounded-lg border bg-card text-card-foreground shadow-sm w-full cursor-pointer xl:w-[380px]"
+              className="w-full cursor-pointer rounded-lg border bg-card text-card-foreground shadow-sm xl:w-[380px]"
               key={index}
-              href={'/tournaments/1/about'}
+              href={"/tournaments/1/about"}
             >
               <div className="flex flex-col space-y-1.5 p-6">
                 <h3 className="text-lg font-semibold leading-none tracking-tight">{tournament.name}</h3>
@@ -29,11 +29,11 @@ const tournaments = ({ params }: Params) => {
                 <div className="p-6 pt-0"></div>
               </div>
             </Link>
-          );
+          )
         })}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default tournaments;
+export default tournaments
