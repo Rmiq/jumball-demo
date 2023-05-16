@@ -5,7 +5,7 @@ import Link from "next/link";
 const Header = () => {
 
   const items = [{
-    href: '/tournaments/1/about',
+    href: '/tournaments',
     title: 'Tournaments'
   },
   {

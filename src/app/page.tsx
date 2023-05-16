@@ -1,6 +1,11 @@
+import { redirect } from "next/navigation";
+
 const Page = () => {
-    return(<>
-    </>);
+  redirect('/tournaments');
+  return (
+    <>
+    </>
+  );
 }
 
 export default Page;
