@@ -1,5 +1,4 @@
 const Page = () => {
-
   const teams = [
     { id: 1, name: 'Player Name/Player Name' },
     { id: 2, name: 'Player Name/Player Name' },
@@ -8,12 +7,12 @@ const Page = () => {
     { id: 5, name: 'Player Name/Player Name' },
     { id: 6, name: 'Player Name/Player Name' },
     { id: 7, name: 'Player Name/Player Name' },
-    { id: 8, name: 'Player Name/Player Name' },
+    { id: 8, name: 'Player Name/Player Name' }
   ];
 
   return (
     <div className="grid gap-1">
-      <h1 className='text-3xl font-bold'>Participants</h1>
+      <h1 className="text-3xl font-bold">Participants</h1>
       <p className="text-lg text-muted-foreground">List of participants in the tournaments</p>
       <div className="divide-y divide-border rounded-md border my-4">
         {teams.map((team, index) => {
@@ -29,6 +28,6 @@ const Page = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Page;

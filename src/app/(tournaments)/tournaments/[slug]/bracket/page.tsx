@@ -2,8 +2,8 @@ import Bracket from '@/components/bracket';
 
 interface Params {
   params: {
-    slug: string[]
-  }
+    slug: string[];
+  };
 }
 
 const tournaments = ({ params }: Params) => {
@@ -14,6 +14,6 @@ const tournaments = ({ params }: Params) => {
       <Bracket />
     </>
   );
-}
+};
 
 export default tournaments;

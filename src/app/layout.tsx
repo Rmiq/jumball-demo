@@ -1,11 +1,11 @@
 // import SupabaseProvider from './supabase-provider'
-import Header from "@/components/header"
-import "@/styles/globals.css"
+import Header from '@/components/header';
+import '@/styles/globals.css';
 
 export const metadata = {
   title: 'Jumball',
-  description: 'Jumball',
-}
+  description: 'Jumball'
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -15,5 +15,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
       </body>
     </html>
-  )
+  );
 }

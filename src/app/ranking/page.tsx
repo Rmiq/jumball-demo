@@ -1,7 +1,6 @@
-import { Icons } from "@/components/icons";
+import { Icons } from '@/components/icons';
 
 const Page = () => {
-
   const players = [
     {
       name: 'Player 1',
@@ -52,22 +51,21 @@ const Page = () => {
       name: 'Player 11',
       tournamentsCount: 1,
       points: 0
-    },
-
+    }
   ];
 
-  const Icon = Icons["trophy"];
+  const Icon = Icons['trophy'];
 
   const getTrophy = (index: number) => {
-    if (index == 0) return <Icon color='gold' />
-    if (index == 1) return <Icon color='silver' />
-    if (index == 2) return <Icon color='brown' />
-    return null
-  }
+    if (index == 0) return <Icon color="gold" />;
+    if (index == 1) return <Icon color="silver" />;
+    if (index == 2) return <Icon color="brown" />;
+    return null;
+  };
 
   return (
     <div>
-      <h1 className='text-3xl font-bold'>Ranking</h1>
+      <h1 className="text-3xl font-bold">Ranking</h1>
       <p className="text-lg text-muted-foreground">List of players sorted by the total points gathered</p>
       <table className="table table-compact w-full my-8">
         <thead>
@@ -91,8 +89,8 @@ const Page = () => {
           })}
         </tbody>
       </table>
-    </div >
+    </div>
   );
-}
+};
 
 export default Page;
