@@ -38,10 +38,10 @@ const Bracket = () => {
     formState: { errors },
   } = useForm()
   const onSubmit = (data: any) => {
-    console.log(data);
+    console.log(data)
   }
 
-  const onOpenChange = (e) => {
+  const onOpenChange = (e: any) => {
     if (!e) {
       // Clear form data after modal close
       unregister("team1-set1")
@@ -149,7 +149,7 @@ const Bracket = () => {
       return tournament
     }
 
-    const calculateSetResult = (results) => {
+    const calculateSetResult = (results: any) => {
       let x = 0
       let y = 0
 
