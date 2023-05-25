@@ -197,7 +197,7 @@ const Bracket = () => {
               <form onSubmit={handleSubmit(onSubmit)}>
                 <DialogHeader>
                   <DialogTitle>Update score</DialogTitle>
-                  <DialogDescription>Make changes to the game result. Click submit when you're done.</DialogDescription>
+                  <DialogDescription>Make changes to the game result. Click submit when you are done.</DialogDescription>
                 </DialogHeader>
                 <div className="grid gap-4 pb-4">
                   <div className="mb-[-0.75rem] flex items-center justify-between">
